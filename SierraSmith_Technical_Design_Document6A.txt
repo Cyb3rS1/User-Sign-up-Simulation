@@ -1,0 +1,84 @@
+
+User Sign-up Simulation
+
+---
+
+Name: Sierra Smith  
+Date Created: 10/21/2024
+
+---
+
+Program Description: 
+At the base level, this program takes user input and compares it with regular expression patterns
+to determine whether the input is valid or not. To simulate a real-life scenario, the program
+takes the user through a sign-up process while verifying their input. After three key pieces of
+info (phone number, social security number, zip code) have been verified, an account summary is
+shown and the user is prompted to log out. There is also an option to make a new account which
+restarts the sign-up process.
+
+---
+
+Logical Steps:  
+1. Call main().
+2. Call start().
+3. Prompt user to give info for "name," "username," and "password."
+4. Call validate().
+5. Prompt user for phone number, social security number, and zip code.
+6. If any of the input is incorrect, the user is prompted again until they enter
+	input that matches the corresponding regular expression pattern.
+7. Store all correct user input into a list (valid_info).
+8. Call display() with all the verified input used as arguments.
+9. Display success message with account summary displaying the valid user input.
+10. Call end().
+11. Prompt the user to log out.
+12. Give the user an option to create a new account or exit the program.
+13. If the user chooses to create a new account, the program restarts.
+
+---
+
+Variables:  
+1. DIV: Reused divider that enhances the neatness of program output.
+2. name: (Global) Input; the user's name.
+3. username: (Global) Input; the user's username.
+4. password: (Global) Input; the user's password.
+5. p_pat: Regular expression pattern for a phone number.
+6. ssn_pat: Regular expression pattern for a social security number.
+7. zip_pat: Regular expression pattern for a zip code.
+8. verif: Dictionary containing parameters for verifying the user input.
+9. valid_info: A list that stores all verified user input.
+10. count: Counter for iterating through dictionary list indexes.
+11. user_info: Input that is tested and added to the valid_info list.
+12. restart: Input that determines whether the user will restart or exit the program.
+
+---
+
+Functions:
+1. Function Name: main  
+   Description: Main function that contains all other functions.
+   Parameters: None
+   Returns: None
+
+2. Function Name: start
+   Description: Starts user sign-up process. 
+   Parameters: None  
+   Returns: None
+
+3. Function Name: validate
+   Description: Prompts user for info and stores verified input into a list (valid_info).  
+   Parameters: None  
+   Returns: None
+
+4. Function Name: display
+   Description: Takes input that is stored in valid_info and displays it in an account summary. 
+   Parameters: phone, ssn, zipcode
+   Returns: None
+
+5. Function Name: end
+   Description: Prompts user to log out. Also prompts user to create a new account or exit the
+ 	program.
+   Parameters: None 
+   Returns: None
+
+---
+
+Link to repository: https://github.com/Cyb3rS1/User-Sign-up-Simulation
